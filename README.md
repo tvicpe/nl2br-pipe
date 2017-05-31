@@ -10,7 +10,7 @@ nl2br-pipe
 ### <a name="description"></a>1. Description
 `nl2br-pipe` or `Nl2BrPipe` is a pipe for angular2 projects 
 which replaces the new line characters `\n` in a string with 
-the `&lt;br/&gt;` tag.
+the `<br />` tag.
   
 ### <a name="installation"></a>2. Installation
 Install the module into your application and save it as a dev 
@@ -37,7 +37,7 @@ Include it in your components declarations list in your `@NgModule(...)`:
 ```
 
 Use it in your template to replace new line characters `\n` with 
-the `&lt;br/&gt;` tag:
+the `<br />` tag:
 ```angular2html
 <div>{{'test html content\nnew line\nthird line' | nl2br }}</div>
 ```
@@ -54,13 +54,13 @@ Output:
   
 #### transform(value: string): string
 Replace the new line characters `\n` in a string with 
-the `&lt;br/&gt;` tag
+the `<br />` tag
   
 *Parameters:*  
-**value** - string where to replace `\n` with `&lt;br/&gt;`.  
+**value** - string where to replace `\n` with `<br />`.  
   
 *Return:*  
-Method returns the new string containing `&lt;br/&gt;` tag 
+Method returns the new string containing `<br />` tag 
 instead of `\n`.  
   
   
