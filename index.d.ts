@@ -7,6 +7,8 @@
  *~ Otherwise, delete this declaration.
  */
 
+import { DomSanitizer } from "@angular/platform-browser";
+
 // export as namespace Nl2BrPipe;
 
 /*~ This declaration specifies that the class constructor function
@@ -18,6 +20,8 @@
  */
 
 declare class Nl2BrPipe {
+  constructor(sanitizer: DomSanitizer);
+
   public transform(value: string): string;
 }
 

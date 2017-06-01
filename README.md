@@ -39,13 +39,13 @@ Include it in your components declarations list in your `@NgModule(...)`:
 Use it in your template to replace new line characters `\n` with 
 the `<br />` tag:
 ```angular2html
-<div>{{'test html content\nnew line\nthird line' | nl2br }}</div>
+<div [innerHTML]="'<strong>test html content</strong>\nnew line\nthird line' | trustHtml"></div>
 ```
   
 Output:
 ```html
 <div>
-  test html content<br/>new line<br/>third line
+  <strong>test html content</strong><br />new line<br />third line
 </div>
 ```
   
@@ -55,9 +55,15 @@ Output:
 #### transform(value: string): string
 Replace the new line characters `\n` in a string with 
 the `<br />` tag
+Bypass security and trust the given value to be safe HTML. 
+The sanitizer will leave safe HTML intact and will replace new line 
+character `\n` with the `<br />` tag.  
+**WARNING:** calling this method with untrusted user data exposes your 
+application to XSS security risks!
   
 *Parameters:*  
-**value** - string where to replace `\n` with `<br />`.  
+**value** - string where to replace `\n` with `<br />` and not to 
+escape the HTML tags.  
   
 *Return:*  
 Method returns the new string containing `<br />` tag 
@@ -68,4 +74,4 @@ instead of `\n`.
 [https://github.com/tvicpe/nl2br-pipe](https://github.com/tvicpe/nl2br-pipe)
 
 ### <a name="version"></a>6. Version
-0.0.1
+0.0.3
