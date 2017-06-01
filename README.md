@@ -39,7 +39,7 @@ Include it in your components declarations list in your `@NgModule(...)`:
 Use it in your template to replace new line characters `\n` with 
 the `<br />` tag:
 ```angular2html
-<div [innerHTML]="'<strong>test html content</strong>\nnew line\nthird line' | trustHtml"></div>
+<div [innerHTML]="'<strong>test html content</strong>\nnew line\nthird line' | nl2br"></div>
 ```
   
 Output:
@@ -74,4 +74,4 @@ instead of `\n`.
 [https://github.com/tvicpe/nl2br-pipe](https://github.com/tvicpe/nl2br-pipe)
 
 ### <a name="version"></a>6. Version
-0.0.3
+0.0.4
