@@ -22,7 +22,7 @@ import { DomSanitizer } from "@angular/platform-browser";
 declare class Nl2BrPipe {
   constructor(sanitizer: DomSanitizer);
 
-  public transform(value: string): string;
+  public transform(value: string): any;
 }
 
 export { Nl2BrPipe };
