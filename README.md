@@ -16,7 +16,7 @@ the `<br />` tag.
 Install the module into your application and save it as a dev 
 dependency in your `package.json` file  
 ```
-npm install nl2br-pipe --save-dev
+npm install nl2br-pipe --save
 ```
 
 ### <a name="usage"></a>3. Usage
