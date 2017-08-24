@@ -1,6 +1,6 @@
 {
   "name": "nl2br-pipe",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "angular2+ pipe to transform new line character to <br />",
   "main": "src/nl2br.pipe.ts",
   "types": "index.d.ts",
