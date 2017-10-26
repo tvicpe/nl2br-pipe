@@ -74,4 +74,4 @@ instead of `\n`.
 [https://github.com/tvicpe/nl2br-pipe](https://github.com/tvicpe/nl2br-pipe)
 
 ### <a name="version"></a>6. Version
-0.0.7
+0.1.0
