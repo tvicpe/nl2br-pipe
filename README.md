@@ -5,7 +5,9 @@ nl2br-pipe
 3. [Usage](#usage)
 4. [Methods](#methods)
 5. [Git repository](#git)
-6. [Version](#version)
+6. [Build](#build)
+7. [Publish to npm](#publish)
+8. [Version](#version)
 
 ### <a name="description"></a>1. Description
 `nl2br-pipe` or `Nl2BrPipe` is a pipe for angular2 projects 
@@ -73,5 +75,22 @@ instead of `\n`.
 ### <a name="git"></a>5. Git repository
 [https://github.com/tvicpe/nl2br-pipe](https://github.com/tvicpe/nl2br-pipe)
 
-### <a name="version"></a>6. Version
+### <a name="build"></a>6. Build
+To build the final package run this command:
+```
+npm run biuld
+```
+The build process will generate the packed sources into the `dist` folder.  
+
+### <a name="publish"></a>7. Publish to npm
+To publish the new version to `npm`, go into the `dist` folder:
+```
+cd ./dist
+```
+and publish it to npm:
+```
+npm publish
+```
+
+### <a name="version"></a>8. Version
 0.1.0

@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "declaration": true, // is important to generate type definitions files, so the user will have Intellisense for your module.
+    "stripInternal": true, // avoid useless declarations for internal APIs
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "strictNullChecks": true, // must be respected starting from Angular 4.1.
+    "noImplicitAny": true, // must be respected since Angular 4.0
+    "module": "es2015",
+    "moduleResolution": "node",
+    "paths": {
+      "@angular/core": [
+        "node_modules/@angular/core"
+      ],
+      "@angular/common": [
+        "node_modules/@angular/common"
+      ],
+      "@angular/platform-browser": [
+        "node_modules/@angular/platform-browser"
+      ]
+    },
+    "rootDir": ".",
+    "outDir": "dist",
+    "sourceMap": true,
+    "inlineSources": true,
+    "target": "es5",
+    "skipLibCheck": true, // avoid being blocked by (harmless) errors in the librairies you use.
+    "lib": [
+      "es2015",
+      "dom"
+    ]
+  },
+  "files": [
+    "index.ts"
+  ],
+  "angularCompilerOptions": {
+    "strictMetadataEmit": true // is needed to be AoT compatible.
+  }
+}
