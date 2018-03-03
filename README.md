@@ -22,18 +22,18 @@ npm install nl2br-pipe --save
 ```
 
 ### <a name="usage"></a>3. Usage
-In order to use the `Nl2BrPipe` you have to include/import 
-it into your application:
+In order to use the `Nl2BrPipe` you have to include/import its module 
+into your application:
 
 ```typescript
-import {Nl2BrPipe} from "nl2br-pipe";
+import {Nl2BrPipeModule} from 'nl2br-pipe';
 ```
 
-Include it in your components declarations list in your `@NgModule(...)`:
+Include it in your component's `imports` list of your `@NgModule(...)`:
 ```typescript
 @NgModule({
   //...
-  declarations: [Nl2BrPipe],
+  imports: [Nl2BrPipeModule],
   //...
 })
 ```
