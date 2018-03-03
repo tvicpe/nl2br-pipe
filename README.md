@@ -78,7 +78,7 @@ instead of `\n`.
 ### <a name="build"></a>6. Build
 To build the final package run this command:
 ```
-npm run biuld
+npm run build
 ```
 The build process will generate the packed sources into the `dist` folder.  
 
