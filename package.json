@@ -1,6 +1,6 @@
 {
   "name": "nl2br-pipe",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "angular2+ pipe to transform new line character to <br />",
   "main": "src/nl2br-pipe.module.js",
   "types": "index.d.ts",
@@ -10,7 +10,14 @@
     "email": "tv@tomsa.md",
     "url": "https://github.com/tvicpe"
   },
-  "repository": "tvicpe/nl2br-pipe",
+  "repository": "https://github.com/tvicpe/nl2br-pipe",
+  "homepage": "https://github.com/tvicpe/nl2br-pipe",
+  "bugs": {
+    "url": "https://github.com/tvicpe/nl2br-pipe/issues",
+    "email": "tv@tomsa.md"
+  },
+  "contributors": [],
+  "engines": {},
   "license": "MIT",
   "licenses": [
     {
@@ -55,5 +62,6 @@
     "typescript": "~2.5.3",
     "uglify-js": "^3.3.12",
     "zone.js": "^0.8.19"
-  }
+  },
+  "dependencies": {}
 }
