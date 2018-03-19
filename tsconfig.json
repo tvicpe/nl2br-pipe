@@ -35,6 +35,7 @@
     "index.ts"
   ],
   "angularCompilerOptions": {
-    "strictMetadataEmit": true // is needed to be AoT compatible.
+    "strictMetadataEmit": true, // is needed to be AoT compatible.
+    "skipTemplateCodegen": true
   }
 }

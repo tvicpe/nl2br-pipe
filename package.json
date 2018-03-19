@@ -1,8 +1,8 @@
 {
   "name": "nl2br-pipe",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "angular2+ pipe to transform new line character to <br />",
-  "main": "bundles/nl2br-pipe-module.umd.js",
+  "main": "src/nl2br-pipe.module.js",
   "types": "index.d.ts",
   "module": "index.js",
   "author": {
@@ -11,6 +11,7 @@
     "url": "https://github.com/tvicpe"
   },
   "repository": "tvicpe/nl2br-pipe",
+  "license": "MIT",
   "licenses": [
     {
       "type": "MIT",
@@ -20,8 +21,10 @@
   "scripts": {
     "transpile": "ngc",
     "package": "rollup -c",
-    "minify": "uglifyjs dist/bundles/nl2br-pipe-module.umd.js --screw-ie8 --compress --mangle --comments --output dist/bundles/nl2br-pipe-module.umd.min.js",
-    "build": "npm run transpile && npm run package && npm run minify"
+    "minify-rollup": "uglifyjs dist/bundles/nl2br-pipe-module.umd.js --screw-ie8 --compress --mangle --comments --output dist/bundles/nl2br-pipe-module.umd.min.js",
+    "build-rollup": "npm run transpile && npm run package && npm run minify-rollup",
+    "minify": "uglifyjs dist/src/nl2br-pipe.module.js --screw-ie8 --compress --mangle --comments --output dist/src/nl2br-pipe.module.min.js",
+    "build": "npm run transpile"
   },
   "keywords": [
     "nl2br",
