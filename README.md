@@ -41,7 +41,15 @@ Include it in your component's `imports` list of your `@NgModule(...)`:
 Use it in your template to replace new line characters `\n` with 
 the `<br />` tag:
 ```angular2html
+<!-- Angular2.x -->
 <div [innerHTML]="'<strong>test html content</strong>\nnew line\nthird line' | nl2br"></div>
+```
+```angular4html
+<!-- Angular4+ -->
+<div [innerHTML]="'<strong>test html content</strong>\nnew line\nthird line' | nl2br"></div>
+
+<!-- sanitize forcibly the string -->
+<div [innerHTML]="'<strong>test html content</strong>\nnew line\nthird line' | nl2br : true"></div>
 ```
   
 Output:
@@ -54,22 +62,25 @@ Output:
   
 ### <a name="methods"></a>4. Methods
   
-#### transform(value: string): string
+#### transform(value: string, sanitizeBeforehand?: boolean): string
 Replace the new line characters `\n` in a string with 
 the `<br />` tag
 Bypass security and trust the given value to be safe HTML. 
 The sanitizer will leave safe HTML intact and will replace new line 
 character `\n` with the `<br />` tag.  
-**WARNING:** calling this method with untrusted user data exposes your 
-application to XSS security risks!
+
+**WARNING:** in Angular version `2.x`, calling this method with 
+untrusted user data exposes your application to XSS security risks!
   
 *Parameters:*  
 **value** - string where to replace `\n` with `<br />` and not to 
 escape the HTML tags.  
+**sanitizeBeforehand** - optional boolean parameter which allows you 
+optionally to sanitize the `value` string. Parameter is available only 
+for Angular `4+`.  
   
 *Return:*  
-Method returns the new string containing `<br />` tag 
-instead of `\n`.  
+Method returns the new string containing `<br />` tag instead of `\n`.  
   
   
 ### <a name="git"></a>5. Git repository
@@ -93,4 +104,4 @@ npm publish
 ```
 
 ### <a name="version"></a>8. Version
-1.0.3
+1.1.0
