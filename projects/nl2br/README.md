@@ -89,14 +89,14 @@ Method returns the new string containing `<br />` tag instead of `\n`.
 ### <a name="build"></a>6. Build
 To build the final package run this command:
 ```
-npm run build
+ng buil nl2br
 ```
 The build process will generate the packed sources into the `dist` folder.  
 
 ### <a name="publish"></a>7. Publish to npm
 To publish the new version to `npm`, go into the `dist` folder:
 ```
-cd ./dist
+cd ./dist/nl2br
 ```
 and publish it to npm:
 ```
