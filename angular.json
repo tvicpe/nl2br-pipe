@@ -130,6 +130,41 @@
           }
         }
       }
+    },
+    "nl2br": {
+      "root": "projects/nl2br",
+      "sourceRoot": "projects/nl2br/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/nl2br/tsconfig.lib.json",
+            "project": "projects/nl2br/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/nl2br/src/test.ts",
+            "tsConfig": "projects/nl2br/tsconfig.spec.json",
+            "karmaConfig": "projects/nl2br/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/nl2br/tsconfig.lib.json",
+              "projects/nl2br/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "nl2br-ng7"

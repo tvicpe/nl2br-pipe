@@ -1,0 +1,45 @@
+{
+  "name": "nl2br-pipe",
+  "version": "1.2.0",
+  "author": {
+    "name": "tvicpe",
+    "email": "tv@tomsa.md",
+    "url": "https://github.com/tvicpe"
+  },
+  "repository": "https://github.com/tvicpe/nl2br-pipe",
+  "homepage": "https://github.com/tvicpe/nl2br-pipe",
+  "bugs": {
+    "url": "https://github.com/tvicpe/nl2br-pipe/issues",
+    "email": "tv@tomsa.md"
+  },
+  "contributors": [],
+  "engines": {},
+  "license": "MIT",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/tvicpe/nl2br-pipe/blob/master/LICENSE"
+    }
+  ],
+  "keywords": [
+    "nl2br",
+    "new",
+    "inject",
+    "line",
+    "br",
+    "angular",
+    "angular2",
+    "angular4",
+    "angular5",
+    "angular6",
+    "angular7",
+    "pipe",
+    "nl2br-pipe",
+    "<br />"
+  ],
+  "peerDependencies": {
+    "@angular/common": "^7.2.0",
+    "@angular/core": "^7.2.0",
+    "@angular/platform-browser": "^7.2.0"
+  }
+}

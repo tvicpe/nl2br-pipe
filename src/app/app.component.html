@@ -18,4 +18,10 @@
   </li>
 </ul>
 
+<!-- Angular4+ -->
+<div [innerHTML]="'<strong>Angular4+ test html content</strong>\nnew line\nthird line' | nl2br"></div>
+
+<!-- sanitize forcibly the string -->
+<div [innerHTML]="'<strong>sanitize forcibly the string test html content</strong>\nnew line\nthird line' | nl2br : true"></div>
+
 <router-outlet></router-outlet>

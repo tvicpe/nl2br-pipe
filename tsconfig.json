@@ -17,6 +17,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "nl2br": [
+        "dist/nl2br"
+      ],
+      "nl2br/*": [
+        "dist/nl2br/*"
+      ]
+    }
   }
 }
