@@ -1,6 +1,6 @@
 {
   "name": "nl2br-pipe",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "author": {
     "name": "tvicpe",
     "email": "tv@tomsa.md",
@@ -38,8 +38,8 @@
     "<br />"
   ],
   "peerDependencies": {
-    "@angular/common": "^7.2.0",
-    "@angular/core": "^7.2.0",
-    "@angular/platform-browser": "^7.2.0"
+    "@angular/common": ">=2.3.1",
+    "@angular/core": ">=2.3.1",
+    "@angular/platform-browser": ">=2.3.1"
   }
 }

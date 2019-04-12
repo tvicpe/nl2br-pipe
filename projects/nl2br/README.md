@@ -89,7 +89,7 @@ Method returns the new string containing `<br />` tag instead of `\n`.
 ### <a name="build"></a>6. Build
 To build the final package run this command:
 ```
-ng buil nl2br
+ng build nl2br
 ```
 The build process will generate the packed sources into the `dist` folder.  
 
