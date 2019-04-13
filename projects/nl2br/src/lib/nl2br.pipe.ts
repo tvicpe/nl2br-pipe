@@ -4,7 +4,7 @@ import { DomSanitizer } from '@angular/platform-browser';
 @Pipe({
   name: 'nl2br'
 })
-export class Nl2brPipe implements PipeTransform {
+export class Nl2BrPipe implements PipeTransform {
 
   constructor(private sanitizer: DomSanitizer) {
   }

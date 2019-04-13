@@ -104,4 +104,4 @@ npm publish
 ```
 
 ### <a name="version"></a>8. Version
-1.2.2
+1.2.3

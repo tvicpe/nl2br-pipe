@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { Nl2brModule } from '../../projects/nl2br/src/lib/nl2br.module';
+import { Nl2BrPipeModule } from '../../projects/nl2br/src/lib/nl2br.module';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,7 +12,7 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    Nl2brModule
+    Nl2BrPipeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
